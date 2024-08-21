@@ -1,0 +1,1944 @@
+{
+  "component-definition": {
+    "uuid": "cef08ac6-4c09-4152-ba30-2e0e38f9867b",
+    "metadata": {
+      "title": "Component definition for Acme",
+      "last-modified": "2024-08-21T18:24:29+00:00",
+      "version": "develop",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "47da46b5-2399-4723-a78a-ad64467bd2d1",
+        "type": "Service",
+        "title": "appid-D",
+        "description": "appid-D",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_no_localhost_or_127001",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID redirect URIs are not using localhost or 127.0.0.1",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_00"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_no_wildcards",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID redirect URIs are not using wildcards (*)",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_01"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_user_profile_updates_from_client_apps_disabled",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID user profile updates from client apps is disabled",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_02"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_cloud_directory_users_account_update_disabled",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory users aren't able to update their own accounts",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_03"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_cloud_directory_users_selfsign_disabled",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory users aren't able to self-sign up to applications",
+            "remarks": "rule_set_04"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_04"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "5e537836-0c8f-4bfd-aae0-e89730b9d1a8",
+            "source": "profiles/acme-profile-nist-800-53/profile.json",
+            "description": "Acme profile based on NIST 800-53 Rev 5 HIgh",
+            "implemented-requirements": [
+              {
+                "uuid": "a6fc21f5-4c00-4b65-951a-e25412b5dffb",
+                "control-id": "ac-4",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_no_localhost_or_127001"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_no_wildcards"
+                  }
+                ]
+              },
+              {
+                "uuid": "b7c6ebdc-8705-4d32-8cd6-1c08153ccc5a",
+                "control-id": "cm-7",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "cm-7_smt.a",
+                    "uuid": "822c2348-7696-4098-af31-a401d2371992",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_localhost_or_127001"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_wildcards"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_user_profile_updates_from_client_apps_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_account_update_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_selfsign_disabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "cm-7_smt.b",
+                    "uuid": "5ee0c824-a3bd-4ac7-8afc-477c9c73b38c",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_localhost_or_127001"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_wildcards"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_user_profile_updates_from_client_apps_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_account_update_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_selfsign_disabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "8e3b12d1-c6ee-47c2-8e26-8ac941175fd8",
+                "control-id": "sc-7",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "sc-7_smt.a",
+                    "uuid": "b728ac1f-8ef9-436c-8e35-20cb182aabfb",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_localhost_or_127001"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_wildcards"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "sc-7_smt.b",
+                    "uuid": "0525a91b-374c-4c28-83c9-5feeaa9a2c44",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_localhost_or_127001"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_wildcards"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "50e87693-8faf-424e-b03d-b8c5efe7adfd",
+                "control-id": "sc-7.4",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "sc-7.4_smt.a",
+                    "uuid": "6bbf157f-cb39-422f-aeac-96f681e5c613",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_localhost_or_127001"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_no_wildcards"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "8b4bfb74-56ed-4e01-b38c-86baaeb089df",
+                "control-id": "sc-7.5",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_no_localhost_or_127001"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_no_wildcards"
+                  }
+                ]
+              },
+              {
+                "uuid": "0b47f1ab-570a-4ce3-b5a4-49cbc9b088ae",
+                "control-id": "ac-5",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ac-5_smt.c",
+                    "uuid": "c6793798-51e7-4c14-94ea-a9997cd3d9d0",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_user_profile_updates_from_client_apps_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_account_update_disabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_cloud_directory_users_selfsign_disabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "816910f8-ffcc-42c9-a514-d9b0d3d7b9ca",
+                "control-id": "ac-6",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_cloud_directory_users_account_update_disabled"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "d3361319-0da6-478b-9aa2-bd94979b7b5e",
+        "type": "Service",
+        "title": "appid-A",
+        "description": "appid-A",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_lockout_policy_after_failed_of_signin_attempts_is_enabled",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory lockout policy after failed # of sign-in attempts is enabled",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_05"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_advanced_password_management_is_enabled",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory advanced password management is enabled",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_06"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory avoid password reuse policy is enabled",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_07"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_lockout_period_is_set_to_at_least_minutes",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory lockout period is set to at least # minute(s)",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Parameter_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "lockout_policy_config_minutes",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Parameter_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Lockout duration policy setting in minutes",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Parameter_Type",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "numeric",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_08"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_anonymous_authentication_disabled",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID anonymous authentication is disabled",
+            "remarks": "rule_set_09"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_09"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "f9e8acca-8394-41cc-abb4-3df1c51f764d",
+            "source": "profiles/acme-profile-nist-800-53/profile.json",
+            "description": "Acme profile based on NIST 800-53 Rev 5 HIgh",
+            "set-parameters": [
+              {
+                "param-id": "lockout_policy_config_minutes",
+                "values": [
+                  "15"
+                ]
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "4b680ae8-78cb-4364-a0be-d4de39b9df3e",
+                "control-id": "ac-7",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ac-7_smt.a",
+                    "uuid": "0dd68d35-b362-459f-85a2-6c096d12c118",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_lockout_policy_after_failed_of_signin_attempts_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "ac-7_smt.b",
+                    "uuid": "31f7ebed-2ea2-4568-a32f-1936e1af4580",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_lockout_period_is_set_to_at_least_minutes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "7a287191-e014-4b23-b080-0d298469243b",
+                "control-id": "cm-7",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "cm-7_smt.b",
+                    "uuid": "fb4bf211-12bd-406e-9338-86dc7e8193b0",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_anonymous_authentication_disabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "cm-7_smt.a",
+                    "uuid": "52b43fdd-9f8a-4fcb-be9c-b8addac39377",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_anonymous_authentication_disabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "b0d5c87d-2fd9-4c0a-81fb-c9d901672984",
+                "control-id": "ia-5",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5_smt.c",
+                    "uuid": "3fb978a5-6314-49d7-8909-223c0b7518cf",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "ia-5_smt.f",
+                    "uuid": "a8b3278f-6657-47af-afc4-77655993bd1b",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "c6b7d2c7-73ec-4982-ab89-342904c75053",
+                "control-id": "ia-5.1",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5.1_smt.d",
+                    "uuid": "5fa97526-4c47-462f-a42f-95ef0c9f2494",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "ia-5.1_smt.e",
+                    "uuid": "e34dccd4-5009-4ddb-8fb2-488f14a011f0",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_advanced_password_management_is_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "37cf22b9-40d6-40b5-9245-483894036163",
+                "control-id": "ac-14",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ac-14_smt.a",
+                    "uuid": "fede0770-2a7f-4751-aa95-b56b0c48ec98",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_anonymous_authentication_disabled"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "a1b3a885-bbf4-4a96-b84d-297717890304",
+        "type": "Service",
+        "title": "appid-B",
+        "description": "appid-B",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_runtime_activity_capture_enabled",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID runtime activity capture is enabled",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_10"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_webhooks_https_only_configured",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID webhooks are using HTTPS only",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_11"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_email_dispatchers_https_only_configured",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID email dispatchers are using HTTPS only",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_12"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_https_only_configured",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID redirect URIs are using HTTPS only",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_13"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_social_identity_providers_disabled",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID social identity providers are disabled",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_14"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_multifactor_authentication_mfa_enabled_for_cloud_directory_users",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID multifactor authentication (MFA) is enabled for Cloud Directory users",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_15"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_email_verification_for_cloud_directory_users_enabled",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID email verification is enabled for Cloud Directory users",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_16"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_password_strength_regex_configured",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID password strength regex is configured",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_17"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_advanced_password_policies_enabled",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID advanced password policies are enabled",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_18"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_prevent_username_in_password_policy_is_enabled",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory prevent username in password policy is enabled",
+            "remarks": "rule_set_19"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_19"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "dbb501cd-56f2-4ebd-a3dd-39c200c91ab8",
+            "source": "profiles/acme-profile-nist-800-53/profile.json",
+            "description": "Acme profile based on NIST 800-53 Rev 5 HIgh",
+            "implemented-requirements": [
+              {
+                "uuid": "693c7cd7-0064-431b-82e7-8863c512e2de",
+                "control-id": "au-2",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "au-2_smt.a",
+                    "uuid": "f8d4d5e5-180c-4887-81af-3bb263ab0020",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_runtime_activity_capture_enabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "au-2_smt.d",
+                    "uuid": "43928a30-152e-43a2-9c6b-47f06c7e4cde",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_runtime_activity_capture_enabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "c02619fa-8766-4d19-82b1-dbb4b00f4d74",
+                "control-id": "cm-7",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "cm-7_smt.a",
+                    "uuid": "48b53fa2-6447-45f0-b3c3-c7dd2ffb16ef",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_webhooks_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_email_dispatchers_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_social_identity_providers_disabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "cm-7_smt.b",
+                    "uuid": "48d4a443-b39c-44ee-9e68-553d5402d6b1",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_webhooks_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_email_dispatchers_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_https_only_configured"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "1a6339be-d11c-46c4-93f4-cc85eea0ca81",
+                "control-id": "ia-5.1",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5.1_smt.c",
+                    "uuid": "696de62d-863e-4609-8aa2-67d6847a418f",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_webhooks_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_email_dispatchers_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_https_only_configured"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "ia-5.1_smt.a",
+                    "uuid": "37ef80fb-4cb4-42e3-b218-c808f9e5b8c8",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_password_strength_regex_configured"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "2fa5dee4-5de1-454c-8ae5-80220d66b0d9",
+                "control-id": "sc-7.4",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "sc-7.4_smt.c",
+                    "uuid": "b6498786-6d34-4e94-9d5f-ee2aaaf4d4a7",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_webhooks_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_email_dispatchers_https_only_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_redirect_uris_https_only_configured"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "71a4bb83-4367-45fc-b150-109425abfd85",
+                "control-id": "sc-8",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_webhooks_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_email_dispatchers_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_https_only_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "528fc784-b0ae-45aa-9855-d30291b81797",
+                "control-id": "sc-8.1",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_webhooks_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_email_dispatchers_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_https_only_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "280f610a-112c-4d8a-9ca1-2edcff8fb5cd",
+                "control-id": "sc-13",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_webhooks_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_email_dispatchers_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_https_only_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "8afc1983-5829-4fa3-b0cc-883d6f5d9aec",
+                "control-id": "sc-23",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_webhooks_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_email_dispatchers_https_only_configured"
+                  },
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_redirect_uris_https_only_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "4bf7f92d-e1b0-46ac-baca-2ceed91c9449",
+                "control-id": "ia-2.1",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_multifactor_authentication_mfa_enabled_for_cloud_directory_users"
+                  }
+                ]
+              },
+              {
+                "uuid": "8c50236c-714e-4b6a-90e1-f45929dccef0",
+                "control-id": "ia-2.2",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_multifactor_authentication_mfa_enabled_for_cloud_directory_users"
+                  }
+                ]
+              },
+              {
+                "uuid": "5ea92ba7-605f-47cf-9cc5-b49f51fa70eb",
+                "control-id": "ia-5",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5_smt.a",
+                    "uuid": "2a7c250a-475e-47f7-9680-b24a7f9732e4",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_email_verification_for_cloud_directory_users_enabled"
+                      }
+                    ]
+                  },
+                  {
+                    "statement-id": "ia-5_smt.c",
+                    "uuid": "4ad94f11-96cb-4039-9b3c-33357215b4d9",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_password_strength_regex_configured"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "appid_advanced_password_policies_enabled"
+                      },
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_prevent_username_in_password_policy_is_enabled"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "8a6e1235-7a0c-4504-85e2-2e153fc37265",
+        "type": "Service",
+        "title": "appid-C",
+        "description": "appid-C",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_minimum_period_between_password_changes_policy_is_set_to_greater_than_0",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory minimum period between password changes policy is set to greater than 0",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Parameter_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "min_hours_change_password",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Parameter_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Mininum number of hours between App ID password changes",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Parameter_Type",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "numeric",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_20"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_password_expiration_policy_is_enabled",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID Cloud Directory password expiration policy is enabled",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_21"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_access_tokens_expire_count_minutes_configured",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID access tokens are configured to expire within # minutes",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Parameter_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "access_tokens_expiration_minutes",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Parameter_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Expiration in minutes of App ID access tokens",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Parameter_Type",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "numeric",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Parameter_Constraint",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "min value & max value",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_22"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_customermanaged_encryption_kyok_configured",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Rule_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Ensure App ID is enabled with customer-managed encryption and Keep Your Own Key (KYOK)",
+            "remarks": "rule_set_23"
+          },
+          {
+            "name": "Environment",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "ibm-cloud",
+            "remarks": "rule_set_23"
+          }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "aa94de52-702f-4e72-8b06-a70a471085d4",
+            "source": "profiles/acme-profile-nist-800-53/profile.json",
+            "description": "Acme profile based on NIST 800-53 Rev 5 HIgh",
+            "set-parameters": [
+              {
+                "param-id": "min_hours_change_password",
+                "values": [
+                  "0"
+                ]
+              },
+              {
+                "param-id": "access_tokens_expiration_minutes",
+                "values": [
+                  "120"
+                ]
+              }
+            ],
+            "implemented-requirements": [
+              {
+                "uuid": "cbd0270b-26d0-41f8-b45e-016c2130bef9",
+                "control-id": "ia-5",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5_smt.f",
+                    "uuid": "c96d4d80-ad15-4b26-978a-e5c956c22298",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_minimum_period_between_password_changes_policy_is_set_to_greater_than_0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "0f842acf-eee4-475b-b549-e203dd7c3180",
+                "control-id": "ia-5.1",
+                "description": "",
+                "statements": [
+                  {
+                    "statement-id": "ia-5.1_smt.d",
+                    "uuid": "fabe1e7c-8f21-4980-8250-32e11afa28fc",
+                    "description": "",
+                    "props": [
+                      {
+                        "name": "Rule_Id",
+                        "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                        "value": "app_id_cloud_directory_password_expiration_policy_is_enabled"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "uuid": "cc82093d-f60f-46eb-9bc6-7d5cdb2fa0a0",
+                "control-id": "sc-10",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_access_tokens_expire_count_minutes_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "9fdad555-92fb-42ca-a737-4a578cc427e3",
+                "control-id": "sc-13",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_customermanaged_encryption_kyok_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "fab03adb-dd88-4c60-b710-2952b323835a",
+                "control-id": "sc-28",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_customermanaged_encryption_kyok_configured"
+                  }
+                ]
+              },
+              {
+                "uuid": "c82350d0-eb8c-485f-be9b-2b2e383367ae",
+                "control-id": "sc-28.1",
+                "description": "",
+                "props": [
+                  {
+                    "name": "Rule_Id",
+                    "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+                    "value": "appid_customermanaged_encryption_kyok_configured"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "874689f0-2346-4ad2-a0ba-ff2b3f255895",
+        "type": "Validation",
+        "title": "acme-PVP",
+        "description": "acme-PVP",
+        "props": [
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_no_localhost_or_127001",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0001",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID redirect URIs are not using localhost or 127.0.0.1",
+            "remarks": "rule_set_24"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_no_wildcards",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0002",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID redirect URIs are not using wildcards (*)",
+            "remarks": "rule_set_25"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_user_profile_updates_from_client_apps_disabled",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0003",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID user profile updates from client apps is disabled",
+            "remarks": "rule_set_26"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_cloud_directory_users_account_update_disabled",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0004",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory users aren't able to update their own accounts",
+            "remarks": "rule_set_27"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_cloud_directory_users_selfsign_disabled",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0005",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory users aren't able to self-sign up to applications",
+            "remarks": "rule_set_28"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_lockout_policy_after_failed_of_signin_attempts_is_enabled",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0006",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory lockout policy after failed # of sign-in attempts is enabled",
+            "remarks": "rule_set_29"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_advanced_password_management_is_enabled",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0007",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory advanced password management is enabled",
+            "remarks": "rule_set_30"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_avoid_password_reuse_policy_is_enabled",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0008",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory avoid password reuse policy is enabled",
+            "remarks": "rule_set_31"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_lockout_period_is_set_to_at_least_minutes",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0009",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory lockout period is set to at least # minute(s)",
+            "remarks": "rule_set_32"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_anonymous_authentication_disabled",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0010",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID anonymous authentication is disabled",
+            "remarks": "rule_set_33"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_runtime_activity_capture_enabled",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0011",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID runtime activity capture is enabled",
+            "remarks": "rule_set_34"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_webhooks_https_only_configured",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0012",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID webhooks are using HTTPS only",
+            "remarks": "rule_set_35"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_email_dispatchers_https_only_configured",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0013",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID email dispatchers are using HTTPS only",
+            "remarks": "rule_set_36"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_redirect_uris_https_only_configured",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0014",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID redirect URIs are using HTTPS only",
+            "remarks": "rule_set_37"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_social_identity_providers_disabled",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0015",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID social identity providers are disabled",
+            "remarks": "rule_set_38"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_multifactor_authentication_mfa_enabled_for_cloud_directory_users",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0016",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID multifactor authentication (MFA) is enabled for Cloud Directory users",
+            "remarks": "rule_set_39"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_email_verification_for_cloud_directory_users_enabled",
+            "remarks": "rule_set_40"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0017",
+            "remarks": "rule_set_40"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID email verification is enabled for Cloud Directory users",
+            "remarks": "rule_set_40"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_password_strength_regex_configured",
+            "remarks": "rule_set_41"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0018",
+            "remarks": "rule_set_41"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID password strength regex is configured",
+            "remarks": "rule_set_41"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_advanced_password_policies_enabled",
+            "remarks": "rule_set_42"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0019",
+            "remarks": "rule_set_42"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID advanced password policies are enabled",
+            "remarks": "rule_set_42"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_prevent_username_in_password_policy_is_enabled",
+            "remarks": "rule_set_43"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0020",
+            "remarks": "rule_set_43"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory prevent username in password policy is enabled",
+            "remarks": "rule_set_43"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_minimum_period_between_password_changes_policy_is_set_to_greater_than_0",
+            "remarks": "rule_set_44"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0021",
+            "remarks": "rule_set_44"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory minimum period between password changes policy is set to greater than 0",
+            "remarks": "rule_set_44"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_id_cloud_directory_password_expiration_policy_is_enabled",
+            "remarks": "rule_set_45"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0022",
+            "remarks": "rule_set_45"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID Cloud Directory password expiration policy is enabled",
+            "remarks": "rule_set_45"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_access_tokens_expire_count_minutes_configured",
+            "remarks": "rule_set_46"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0023",
+            "remarks": "rule_set_46"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID access tokens are configured to expire within # minutes",
+            "remarks": "rule_set_46"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "appid_customermanaged_encryption_kyok_configured",
+            "remarks": "rule_set_47"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0024",
+            "remarks": "rule_set_47"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App ID is enabled with customer-managed encryption and Keep Your Own Key (KYOK)",
+            "remarks": "rule_set_47"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "app_configuration_private_endpoints_configured",
+            "remarks": "rule_set_48"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0025",
+            "remarks": "rule_set_48"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether App Configuration can be accessed only through a private endpoint",
+            "remarks": "rule_set_48"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "apprapp_no_wild_cards_private_endpoint",
+            "remarks": "rule_set_49"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0026",
+            "remarks": "rule_set_49"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether there are no wild cards in the private endpoint allow list for App Configuration",
+            "remarks": "rule_set_49"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "atracker_global_events_configured",
+            "remarks": "rule_set_50"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0027",
+            "remarks": "rule_set_50"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check that Activity Tracker Event Routing is configured to collect global events generated by IBM Cloud services",
+            "remarks": "rule_set_50"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "there_is_an_activity_tracker_event_route_defined_in_each_region_to_collect_locationbased_events",
+            "remarks": "rule_set_51"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0028",
+            "remarks": "rule_set_51"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check that there is an Activity Tracker event route defined in each region to collect location-based events",
+            "remarks": "rule_set_51"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "atracker_cloud_object_storage_quota_enforcement_disabled",
+            "remarks": "rule_set_52"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0029",
+            "remarks": "rule_set_52"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether Cloud Object Storage quota enforcement is off for buckets that are configured to use Activity Tracker Event Routing",
+            "remarks": "rule_set_52"
+          },
+          {
+            "name": "Rule_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "atracker_cloud_object_storage_buckets_resiliency_set_to_cross_region",
+            "remarks": "rule_set_53"
+          },
+          {
+            "name": "Check_Id",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Policy-0030",
+            "remarks": "rule_set_53"
+          },
+          {
+            "name": "Check_Description",
+            "ns": "http://ibm.github.io/compliance-trestle/schemas/oscal/cd/acme",
+            "value": "Check whether any Cloud Object Storage buckets used by Activity Tracker Event Routing have resiliency set to cross region",
+            "remarks": "rule_set_53"
+          }
+        ],
+        "control-implementations": []
+      }
+    ]
+  }
+}
